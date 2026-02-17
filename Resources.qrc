@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="ArkaFon">
+    <file>resimler/Main.png</file>
+    <file>resimler/logo-white.png</file>
+    <file>resimler/bursa.png</file>
+    <file>resimler/ArkaFon.png</file>
+  </qresource>
+</RCC>
