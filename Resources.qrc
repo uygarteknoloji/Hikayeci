@@ -1,15 +1,16 @@
 <RCC>
   <qresource prefix="ArkaFon">
     <file>resimler/baslik.png</file>
+    <file>resimler/Main.png</file>
     <file>resimler/biyografi.png</file>
     <file>resimler/dram.png</file>
     <file>resimler/hikayeler.png</file>
+    <file>resimler/images.jpg</file>
     <file>resimler/masal.png</file>
     <file>resimler/pratik.png</file>
     <file>resimler/siir.png</file>
     <file>resimler/sohbet.png</file>
     <file>resimler/tarihi.png</file>
-    <file>resimler/Main.png</file>
     <file>resimler/logo-white.png</file>
     <file>resimler/bursa.png</file>
     <file>resimler/ArkaFon.png</file>
