@@ -5,9 +5,8 @@ import os
 # UI dosyalarÄ±nÄ±n listesi
 ui_files = [
     "ui/frmMain.ui",
+    "ui/frmMenu.ui",
 ]
-
-# Ã‡Ä±ktÄ± klasÃ¶rÃ¼ yoksa oluÅŸtur
 os.makedirs("forms", exist_ok=True)
 
 for ui_file in ui_files:

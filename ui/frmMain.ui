@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>frmMain</class>
+ <widget class="QMainWindow" name="frmMain">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1044</width>
-    <height>561</height>
+    <width>1042</width>
+    <height>766</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string></string>
   </property>
   <property name="styleSheet">
-   <string notr="true">border-image: url(:/ArkaFon/resimler/Main.png);</string>
+   <string notr="true">border-image: url(:/ArkaFon/resimler/bursa.png);</string>
   </property>
   <widget class="QWidget" name="centralwidget"/>
  </widget>
