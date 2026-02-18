@@ -1,6 +1,6 @@
 import sys
 from PyQt5 import QtWidgets
-from views.frmMain import frmMain
+from views.frmMainView import frmMain
 
 
 def app():

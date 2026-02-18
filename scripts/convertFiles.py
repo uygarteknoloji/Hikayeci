@@ -1,22 +1,27 @@
 import subprocess
+import sys
+import os
 
-# Dönüştürülecek UI dosyalarını listeye ekleyin
+# UI dosyalarÄ±nÄ±n listesi
 ui_files = [
     "ui/frmMain.ui",
 ]
 
-# Her UI dosyasını py dosyasına dönüştürün
+# Ã‡Ä±ktÄ± klasÃ¶rÃ¼ yoksa oluÅŸtur
+os.makedirs("forms", exist_ok=True)
+
 for ui_file in ui_files:
-    py_file = "forms/{}.py".format(ui_file.split("/")[-1].replace(".ui", "Ui"))
-    command = ["pyuic5", ui_file, "-o", py_file]
-    
+    file_name = os.path.basename(ui_file).replace(".ui", "")
+    py_file = f"forms/Ui_{file_name}.py"
+
+    # Raspberry Pi iÃ§in gÃ¼venli yÃ¶ntem (python -m ile)
+    command = [sys.executable, "-m", "PyQt5.uic.pyuic", ui_file, "-o", py_file]
+
     try:
         subprocess.run(command, check=True)
-        print("{} başarıyla dönüştürüldü.".format(ui_file))
-    except subprocess.CalledProcessError:
-        print("{} dönüştürülürken bir hata oluştu.".format(ui_file))
-
-
+        print(f"{ui_file} Dönüştürüldü.")
+    except subprocess.CalledProcessError as e:
+        print(f"{ui_file} Hata: {e}")
 
 
 
